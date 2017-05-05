@@ -38,7 +38,7 @@ public class ProcessPackage {
     }
 
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
 
         int buffer_max_size = scanner.nextInt();
         Buffer buffer = new Buffer(buffer_max_size);
