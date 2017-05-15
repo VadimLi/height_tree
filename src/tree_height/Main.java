@@ -1,16 +1,25 @@
 package tree_height;
 
-import java.io.IOException;
+import sliding_max.HeightTree;
+
+import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        final TreeHeight treeHeight = new TreeHeight();
+        final HeightTree heightTree = new HeightTree();
 
-        System.out.println("in : ");
-        treeHeight.read();
-        System.out.println("out: " + treeHeight.computeHeight());
+        final Scanner in = new Scanner(System.in);
+
+        final int n = in.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            int value = in.nextInt();
+            heightTree.SetTree(value);
+        }
+
+        System.out.println(heightTree.getHeight());
 
     }
 
