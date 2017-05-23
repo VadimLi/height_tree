@@ -13,7 +13,7 @@ public class Main {
 
         int arrMax[] = new int[q];
 
-        Stack stack = new Stack();
+        final Stack stack = new Stack();
 
         int j = 0;
 
